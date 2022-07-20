@@ -1,0 +1,33 @@
+<form class="address-global" [formGroup]="formAddress">
+  <div class="cidade">
+    <tr class="campos">
+      <td class="campo-cidade">
+        <h1 class="text">Cidade:</h1>
+        <mat-form-field class="input-cidade" appearance="fill">
+          <mat-label class="text-dentro">Insira sua cidade</mat-label>
+          <input matInput placeholder="Ex. Canoas" formControlName="city">
+        </mat-form-field>
+      </td>
+  </div>
+
+  <div class="estado">
+    <td class="campo-estado">
+      <h1 class="text">Estado:</h1>
+      <mat-form-field class="input-estado" appearance="fill">
+        <mat-label class="text-dentro">Insira seu estado</mat-label>
+        <input matInput placeholder="Ex. RS" formControlName="state">
+      </mat-form-field>
+    </td>
+
+  </div>
+
+  <div class="cep">
+    <td class="campo-cep">
+      <h1 class="text">Cep:</h1>
+      <mat-form-field class="input-cep" appearance="fill">
+        <mat-label class="text-dentro">Insira seu cep</mat-label>
+        <input matInput formControlName="cep" mask="000.000.000-00">
+      </mat-form-field>
+    </td>
+  </div>
+</form>

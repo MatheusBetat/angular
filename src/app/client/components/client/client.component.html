@@ -1,0 +1,48 @@
+<form class="global" [formGroup]="formClient">
+
+  <div class="name-email">
+    <td class="campo-nome">
+      <h1 class="text">Nome:</h1>
+      <mat-form-field class="nome" appearance="fill">
+        <mat-label class="text-dentro">Insira seu nome</mat-label>
+        <input matInput formControlName="name">
+      </mat-form-field>
+    </td>
+
+    <td class="campo-email">
+      <h1 class="text">E-mail:</h1>
+      <mat-form-field class="email" appearance="fill">
+        <mat-label class="text-dentro">Insira seu e-mail</mat-label>
+        <input matInput placeholder="Ex. goulartbetat@gmail.com" formControlName="email">
+      </mat-form-field>
+    </td>
+  </div>
+
+  <div class="radio-data">
+    <td class="campo-sexo">
+      <div class="sexo-text">
+        <h1 class="text">Sexo:</h1>
+      </div>
+      <mat-radio-group class="sexo" formControlName="genre">
+        <mat-radio-button class="male" [value]="'Male'">
+         Masculino
+        </mat-radio-button>
+        <mat-radio-button class="female" [value]="'Female'">
+          Feminino
+        </mat-radio-button>
+      </mat-radio-group>
+    </td>
+
+    <td class="campo-data">
+      <div class="data-text">
+        <h1 class="text-data">Data de Nascimento:</h1>
+      </div>
+      <mat-form-field class="data" appearance="fill">
+        <input formControlName="birthDate" matInput  [matDatepicker]="picker"  class="text-dentro" placeholder="00/00/0000">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+    </td>
+  </div>
+
+</form>

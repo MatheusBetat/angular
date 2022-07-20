@@ -1,0 +1,76 @@
+.formulario {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: rgb(231, 130, 5);
+  background: linear-gradient(180deg, rgba(231, 130, 5, 1) 24%, rgba(241, 122, 3, 1) 38%, rgba(251, 110, 1, 1) 53%, rgba(253, 91, 0, 1) 65%, rgba(255, 76, 0, 1) 79%, rgba(250, 46, 0, 1) 100%);
+}
+
+.texto {
+  font-family: Arial Black, serif;
+  line-height: 1.4;
+  font-size: 2.5rem;
+  color: rgba(250, 46, 0, 1);
+  text-align: center;
+}
+
+.campos {
+
+  padding: 15px 0;
+  background-color: floralwhite;
+  border-radius: 8px;
+  text-align: center;
+  width: 40%;
+  height: 70%;
+
+}
+
+.botoes {
+  margin: 5px auto;
+  transform: scale(1.2);
+  z-index: 1;
+  transition-duration: 0.4s;
+
+}
+
+.submit {
+  font-family: Arial, serif;
+  background-color: #562795;
+  border: 1px solid black;
+  margin-right: 10px;
+  height: 30px;
+  width: 100px;
+  border-radius: 5px;
+  line-height: 20px;
+  cursor: pointer;
+  color: white;
+  transition-duration: 0.4s;
+
+}
+
+.reset {
+  font-family: Arial, serif;
+  background-color: #562795;
+  border: 1px solid black;
+  height: 30px;
+  width: 100px;
+  border-radius: 5px;
+  line-height: 20px;
+  cursor: pointer;
+  color: white;
+  transition-duration: 0.4s;
+
+}
+
+.reset:hover {
+  background-color: rgb(231, 130, 5); /* Green */
+}
+
+.submit:hover {
+  background-color: rgb(231, 130, 5); /* Green */
+}
+
+
