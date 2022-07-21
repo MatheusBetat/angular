@@ -3,7 +3,7 @@ export interface ClientModel {
   email?: string;
   genre?: ClientGenereEnum | null;
   birthDate?: Date;
-  address?: ClientAdressModel | null;
+  address?: ClientAdressModel;
 
 }
 

@@ -16,6 +16,8 @@ import {CookieModule} from "ngx-cookie";
 import {TesteModule} from "./teste/teste.module";
 import {UnauthenticatedFormGuard} from "./guards/unauthenticated-form.guard";
 import {FormAuthenticatedGuard} from "./guards/form-authenticated.guard";
+import { StoreModule } from '@ngrx/store';
+import { EffectsModule } from '@ngrx/effects';
 
 
 
@@ -35,7 +37,9 @@ import {FormAuthenticatedGuard} from "./guards/form-authenticated.guard";
     NgxMaskModule.forRoot(),
     MatDatepickerModule,
     MatNativeDateModule,
-    CookieModule.withOptions()
+    CookieModule.withOptions(),
+    StoreModule.forRoot({}, {}),
+    EffectsModule.forRoot([])
   ],
   providers: [MatDatepickerModule,
     {provide: MAT_DATE_LOCALE, useValue: 'pt-BR'},

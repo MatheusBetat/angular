@@ -44,11 +44,5 @@ export class AdressComponent implements OnInit, OnDestroy {
 
   })
 
-  resetAddress() {
-    this.formAddress.reset();
-    console.log("Address limpo.")
-
-  }
-
 }
 
